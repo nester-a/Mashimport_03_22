@@ -7,8 +7,10 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="View\" />
-    <Folder Include="Controllers\" />
+    <Folder Include="View\Russian\" />
+    <Folder Include="View\English\" />
+    <Folder Include="View\Chinese\" />
+    <Folder Include="View\Shared\" />
     <Folder Include="wwwroot\" />
   </ItemGroup>
 
