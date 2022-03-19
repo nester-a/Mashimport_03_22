@@ -7,11 +7,14 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="View\Russian\" />
-    <Folder Include="View\English\" />
-    <Folder Include="View\Chinese\" />
-    <Folder Include="View\Shared\" />
-    <Folder Include="wwwroot\" />
+    <Folder Include="Views\Chinese\Partial\" />
+    <Folder Include="Views\English\Partial\" />
+    <Folder Include="Views\Russian\Partial\" />
+    <Folder Include="Views\Shared\Partial\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="6.0.2" />
   </ItemGroup>
 
 </Project>
