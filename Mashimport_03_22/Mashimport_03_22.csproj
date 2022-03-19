@@ -10,7 +10,6 @@
     <Folder Include="Views\Chinese\Partial\" />
     <Folder Include="Views\English\Partial\" />
     <Folder Include="Views\Russian\Partial\" />
-    <Folder Include="Views\Shared\Partial\" />
   </ItemGroup>
 
   <ItemGroup>
