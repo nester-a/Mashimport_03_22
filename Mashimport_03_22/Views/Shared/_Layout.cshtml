@@ -7,15 +7,39 @@
 		<partial name="Partial/_Scripts"/>
 	</head>
 	<body 
-	style=" background: #949494 url(~/images/bg_top.gif) repeat-x;" 
+	style="background: #949494 url(~/images/bg_top.gif) repeat-x;" 
 	onLoad="MM_preloadImages('~/images/m1_1.gif','~/images/m2_1.gif','~/images/m3_1.gif','~/images/m4_1.gif','~/images/m5_1.gif','~/images/m6_1.gif')">
 		<div class="dt main">
 			<div class="dr">
 			  	<div class="dc">
 					<partial name="Partial/_Header"/>
 
-					@RenderBody();
-			
+					<div class="dt content">
+						<div class="dr">
+							<div class="dc content_width1">
+								<img src="~/images/img_left.gif" alt="">
+								<br>
+							</div>
+							<div class="dc content_width2">
+								<div class="dt" style="height:183px">
+									<div class="dr">
+										<div class="dc" style="width:50px"/>
+										<div class="dc" style="width:550px; border:0px solid #000;">
+											<br style="line-height:9px">
+											@RenderBody();
+										</div>
+										<div style="margin-left:63px">
+											<br style="line-height:20px">
+										</div>	
+									</div>
+								</div>
+							</div>
+							<div class="dc content_width3">
+								<img src="/images/img_right.gif" alt="">
+								<br>
+							</div>
+						</div>
+					</div>
 					<partial name="Partial/_Footer"/>
 				</div>
 			</div>
