@@ -1,5 +1,6 @@
 ﻿using Mashimport_03_22.Models;
 using Mashimport_03_22.Services.Interfaces;
+using Mashimport_03_22.ViewModels;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Mashimport_03_22.Controllers
@@ -17,6 +18,16 @@ namespace Mashimport_03_22.Controllers
         }
         public IActionResult About() => View();
         public IActionResult Partners() => View();
-        public IActionResult Contact() => View(contactsInfo);
+        public IActionResult Contact()
+        {
+            var model = new ContactsInfoViewModel()
+            {
+                Id = contactsInfo.Id,
+                Address = contactsInfo.Address,
+                TelephoneNumber = contactsInfo.TelephoneNumber,
+                Email = contactsInfo.Email,
+            };
+            return View(model);
+        }
     }
 }
