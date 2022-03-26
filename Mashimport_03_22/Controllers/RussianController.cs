@@ -7,7 +7,7 @@ namespace Mashimport_03_22.Controllers
     {
         public RussianController(IContactsData contacts, ILogger<MashimportController> logger) : base(contacts, logger)
         {
-            contactsInfo = contacts.GetById(0);
+            contactsInfo = contacts.GetById(1);
         }
     }
 }
