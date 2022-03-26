@@ -1,11 +1,13 @@
-﻿<section>
+﻿@model Mashimport_03_22.ViewModels.ContactsInfoViewModel
+
+<section>
 	<div class=container>
 		<h1 style="color:#0076A3; margin-left:12px;">联系我们的方式</h1>
 		<div style="margin-left:12px; margin-right:50px">
 			<br style="line-height:9px">
-			<p><strong>地址:</strong> 40, Bolshaya Semenovskaya, Moscow, 107023<br />
-			<strong>电话/传真:</strong> (495)663-33-93<br />
-			<strong>电子邮箱:</strong> <a href="mailto:info@mash-import.com">info@mash-import.com</a></p><br/>
+			<p><strong>地址:</strong>@Model.Address<br />
+			<strong>电话/传真:</strong>@Model.TelephoneNumber<br />
+			<strong>电子邮箱:</strong> <a href="mailto:info@mash-import.com">@Model.Email</a></p><br/>
 		</div>
 		<h1 style=" margin-left:59px;">发出询问</h1>	
 		<div style="margin-left:63px; margin-right:10px">

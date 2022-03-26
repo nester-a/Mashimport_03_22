@@ -1,11 +1,12 @@
-﻿<section>
+﻿@model Mashimport_03_22.ViewModels.ContactsInfoViewModel
+<section>
 	<div class=container>
 		<h1 style="color:#0076A3; margin-left:12px;">НАШИ КОНТАКТЫ</h1>
 		<div style="margin-left:12px; margin-right:50px">
 			<br style="line-height:9px">
-			<p><strong>Адрес:</strong> 107023, Москва, ул. Большая Семеновская, д.40<br />
-			<strong>Тел/факс:</strong> (495)663-33-93<br />
-			<strong>e-mail:</strong> <a href="mailto:info@mash-import.com">info@mash-import.com</a></p><br/>
+			<p><strong>Адрес:</strong>@Model.Address<br />
+			<strong>Тел/факс:</strong>@Model.TelephoneNumber<br />
+			<strong>e-mail:</strong> <a href="mailto:info@mash-import.com">@Model.Email</a></p><br/>
 		</div>
 		<h1 style=" margin-left:59px;">Отправить запрос</h1>	
 		<div style="margin-left:63px; margin-right:10px">
