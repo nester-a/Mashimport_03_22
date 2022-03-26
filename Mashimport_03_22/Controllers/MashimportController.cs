@@ -22,7 +22,6 @@ namespace Mashimport_03_22.Controllers
         {
             var model = new ContactsInfoViewModel()
             {
-                Id = contactsInfo.Id,
                 Address = contactsInfo.Address,
                 TelephoneNumber = contactsInfo.TelephoneNumber,
                 Email = contactsInfo.Email,
