@@ -5,5 +5,6 @@
         string[] About { get; }
         string[] Partners { get; }
         string[] Contact { get; }
+
     }
 }

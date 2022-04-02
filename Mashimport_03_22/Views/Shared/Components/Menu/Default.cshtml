@@ -1,0 +1,24 @@
+﻿@using Mashimport_03_22.ViewModels
+@model MenuViewModel
+
+<div class="dc">
+	<table cellpadding="0" cellspacing="0" width="681" height="31" border="0">
+		<tr>
+			<td width="194">
+				<img src="~/images/p_left.gif" width="194" height="37" alt="">
+			</td>
+			<td width="97" class="button1" align="center">
+				<a asp-action="About">@Model.About</a>
+			</td>
+			<td width="97" class="button2" align="center">
+				<a asp-action="Partners">@Model.Partners</a>
+			</td>
+			<td width="98" class="button3" align="center">
+				<a asp-action="Contact">@Model.Contact</a>
+			</td>
+			<td width="195">
+				<img src="~/images/p_right.gif" width="195" height="37" alt="">
+			</td>
+		</tr>
+	</table>
+</div>
