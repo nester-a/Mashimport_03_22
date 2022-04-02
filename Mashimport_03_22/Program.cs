@@ -5,6 +5,7 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddMvc();
 builder.Services.AddControllersWithViews();
 builder.Services.AddContactsInfo();
+builder.Services.AddMenuButtonsData();
 
 var app = builder.Build();
 app.UseStaticFiles();
