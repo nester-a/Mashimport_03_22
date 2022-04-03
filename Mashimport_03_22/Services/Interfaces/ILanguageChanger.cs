@@ -5,5 +5,8 @@
         void ChangeToRussian(IMenuData menuData);
         void ChangeToEnglish(IMenuData menuData);
         void ChangeToChinese(IMenuData menuData);
+        void ChangeToRussian(IContactFieldsData contactFieldsData);
+        void ChangeToEnglish(IContactFieldsData contactFieldsData);
+        void ChangeToChinese(IContactFieldsData contactFieldsData);
     }
 }

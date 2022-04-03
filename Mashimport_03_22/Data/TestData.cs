@@ -29,5 +29,27 @@ namespace Mashimport_03_22.Data
             Partners = "合作伙伴",
             Contact = "联系方式",
         };
+
+        public static ContactFields ContactFieldsRus { get; } = new()
+        {
+            Title = "НАШИ КОНТАКТЫ",
+            Address = "Адрес:",
+            TelephoneNumber = "Тел/факс:",
+            Email = "E-mail",
+        };
+        public static ContactFields ContactFieldsEng { get; } = new()
+        {
+            Title = "Our contact information",
+            Address = "Address:",
+            TelephoneNumber = "Tel./fax:",
+            Email = "E-mail",
+        };
+        public static ContactFields ContactFieldsChn { get; } = new()
+        {
+            Title = "联系我们的方式",
+            Address = "地址:",
+            TelephoneNumber = "电话/传真:",
+            Email = "电子邮箱:",
+        };
     }
 }
