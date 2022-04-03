@@ -1,4 +1,5 @@
-﻿using Mashimport_03_22.Models;
+﻿using AutoMapper;
+using Mashimport_03_22.Models;
 using Mashimport_03_22.Services.Interfaces;
 using Mashimport_03_22.ViewModels;
 using Microsoft.AspNetCore.Mvc;
@@ -26,14 +27,11 @@ namespace Mashimport_03_22.Controllers
         public IActionResult Partners() => View();
         public IActionResult Contact()
         {
+            var config = new MapperConfiguration(cfg => cfg.CreateMap<ContactsInfo, ContactsInfoViewModel>());
+            var mapper = new Mapper(config);
             var model = new ContactViewModel()
             {
-                InfoModel = new ContactsInfoViewModel()
-                {
-                    Address = contactsInfo.Address,
-                    TelephoneNumber = contactsInfo.TelephoneNumber,
-                    Email = contactsInfo.Email,
-                },
+                InfoModel = mapper.Map<ContactsInfoViewModel>(contactsInfo),
                 FieldsModel = contactFieldsData,
             };
             return View(model);
