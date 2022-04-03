@@ -1,14 +1,9 @@
-﻿@model Mashimport_03_22.ViewModels.ContactsInfoViewModel
+﻿@model ContactViewModel
 
 <section>
 	<div class="container">
-		<h1 style="color:#0076A3; margin-left:12px;">Our contact information</h1>
-		<div style="margin-left:12px; margin-right:50px">
-			<br style="line-height:9px">
-			<p><strong>Address:</strong>@Model.Address<br />
-			<strong>Tel./fax:</strong>@Model.TelephoneNumber<br />
-			<strong>e-mail:</strong> <a href="mailto:info@mash-import.com">@Model.Email</a></p><br/>
-		</div>
+		<vc:contacts model=@Model/>
+		
 		<h1 style=" margin-left:59px;">Send an inquiry</h1>	
 		<div style="margin-left:63px; margin-right:10px">
 			<br style="line-height:13px">

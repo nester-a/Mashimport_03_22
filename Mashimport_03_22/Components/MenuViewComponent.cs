@@ -16,9 +16,9 @@ namespace Mashimport_03_22.Components
         {
             var model = new MenuViewModel()
             {
-                About = menuData.About[0],
-                Partners = menuData.Partners[0],
-                Contact = menuData.Contact[0],
+                About = menuData.About,
+                Partners = menuData.Partners,
+                Contact = menuData.Contact,
             };
 
             return View(model);

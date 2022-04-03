@@ -4,8 +4,10 @@ var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddMvc();
 builder.Services.AddControllersWithViews();
-builder.Services.AddContactsInfo();
-builder.Services.AddMenuButtonsData();
+builder.Services.AddContacts();
+builder.Services.AddMenuData();
+builder.Services.AddContactFieldsData(); 
+builder.Services.AddLanguageChanger();
 
 var app = builder.Build();
 app.UseStaticFiles();

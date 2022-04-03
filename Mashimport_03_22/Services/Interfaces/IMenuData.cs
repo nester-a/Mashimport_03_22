@@ -2,9 +2,9 @@
 {
     public interface IMenuData
     {
-        string[] About { get; }
-        string[] Partners { get; }
-        string[] Contact { get; }
+        string About { get; set; }
+        string Partners { get; set; }
+        string Contact { get; set; }
 
     }
 }
