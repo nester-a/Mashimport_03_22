@@ -1,4 +1,5 @@
-﻿using Mashimport_03_22.Services.Interfaces;
+﻿using AutoMapper;
+using Mashimport_03_22.Services.Interfaces;
 using Mashimport_03_22.ViewModels;
 using Microsoft.AspNetCore.Mvc;
 
@@ -14,12 +15,9 @@ namespace Mashimport_03_22.Components
         }
         public IViewComponentResult Invoke()
         {
-            var model = new MenuViewModel()
-            {
-                About = menuData.About,
-                Partners = menuData.Partners,
-                Contact = menuData.Contact,
-            };
+            var config = new MapperConfiguration(cfg => cfg.CreateMap<IMenuData, MenuViewModel>());
+            var mapper = new Mapper(config);
+            var model = mapper.Map<MenuViewModel>(menuData);
 
             return View(model);
         }
