@@ -6,6 +6,7 @@ builder.Services.AddMvc();
 builder.Services.AddControllersWithViews();
 builder.Services.AddContactsInfo();
 builder.Services.AddMenuButtonsData();
+builder.Services.AddLanguageChangerControllerComponent();
 
 var app = builder.Build();
 app.UseStaticFiles();

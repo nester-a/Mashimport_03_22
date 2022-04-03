@@ -9,12 +9,16 @@ namespace Mashimport_03_22.Controllers
     {
         private readonly IContactsData contacts;
         private readonly ILogger<MashimportController> logger;
+        private readonly ILanguageChanger languageChanger;
+        private readonly IMenuData menuData;
         protected ContactsInfo contactsInfo;
 
-        public MashimportController(IContactsData contacts, ILogger<MashimportController> logger)
+        public MashimportController(IContactsData contacts, ILogger<MashimportController> logger, ILanguageChanger languageChanger, IMenuData menuData)
         {
             this.contacts = contacts;
             this.logger = logger;
+            this.languageChanger = languageChanger;
+            this.menuData = menuData;
         }
         public IActionResult About() => View();
         public IActionResult Partners() => View();
