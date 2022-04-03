@@ -6,6 +6,7 @@ builder.Services.AddMvc();
 builder.Services.AddControllersWithViews();
 builder.Services.AddContacts();
 builder.Services.AddMenuData();
+builder.Services.AddContactFieldsData(); 
 builder.Services.AddLanguageChanger();
 
 var app = builder.Build();
