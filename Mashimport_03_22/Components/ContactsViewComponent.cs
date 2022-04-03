@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Mashimport_03_22.ViewModels;
+using Microsoft.AspNetCore.Mvc;
 
 namespace Mashimport_03_22.Components
 {
@@ -8,9 +9,9 @@ namespace Mashimport_03_22.Components
         {
 
         }
-        public IViewComponentResult Invoke()
+        public IViewComponentResult Invoke(ContactViewModel model)
         {
-            return View();
+            return View(model);
         }
     }
 }
