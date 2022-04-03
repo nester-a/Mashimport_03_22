@@ -26,11 +26,15 @@ namespace Mashimport_03_22.Controllers
         public IActionResult Partners() => View();
         public IActionResult Contact()
         {
-            var model = new ContactsInfoViewModel()
+            var model = new ContactViewModel()
             {
-                Address = contactsInfo.Address,
-                TelephoneNumber = contactsInfo.TelephoneNumber,
-                Email = contactsInfo.Email,
+                InfoModel = new ContactsInfoViewModel()
+                {
+                    Address = contactsInfo.Address,
+                    TelephoneNumber = contactsInfo.TelephoneNumber,
+                    Email = contactsInfo.Email,
+                },
+                FieldsModel = contactFieldsData,
             };
             return View(model);
         }
